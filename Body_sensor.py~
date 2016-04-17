@@ -1,0 +1,4 @@
+import RPi.GPIO as GPIO
+
+class Body_sensor(object):
+	return 0
