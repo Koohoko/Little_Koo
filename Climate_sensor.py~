@@ -1,4 +1,0 @@
-import RPi.GPIO as GPIO
-
-class Climate_sensor(object):
-	return 0
