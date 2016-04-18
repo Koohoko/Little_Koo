@@ -9,8 +9,11 @@ class Monitor_main(object):
 		
 	def start(self):
 		self.LED.fast()
-		temp, humid = self.Climate_sensor.get_data()
-		print 'halo地球人~ 现在的温度是{}摄氏度，相对湿度为{}~'.format(temp, humid)
+		try:
+			temp, humid = self.Climate_sensor.get_data()
+			print 'halo地球人~ 现在的温度是{}摄氏度，相对湿度为{}~'.format(temp, humid)
+		except:
+			print 'Eweew... please wait.. TT'
 		
 		
 		
