@@ -3,4 +3,4 @@
 * LED signal
 * Voice recongnizing
 * Photo taking
-* Climatic and human sensor
+* Climatic and human-movement sensor

@@ -1,3 +1,4 @@
+# coding=utf-8
 import LED, Climate_sensor, Body_sensor
 
 class Monitor_main(object):
@@ -7,8 +8,10 @@ class Monitor_main(object):
 		self.Body_sensor = Body_sensor.Body_sensor()
 		
 	def start(self):
-		self.LED.blink()
 		self.LED.fast()
+		temp, humid = self.Climate_sensor.get_data()
+		print 'halo地球人~ 现在的温度是{}摄氏度，相对湿度为{}~'.format(temp, humid)
+		
 		
 		
 if __name__ == "__main__":
